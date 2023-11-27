@@ -1,6 +1,6 @@
 # Simplest Package
 
-Just to show the simplest possible package.
+Just to show the simplest possible package. Followed [this tutorial](https://www.freecodecamp.org/news/how-to-create-and-publish-your-first-npm-package/).
 
 ## Local Usage
 
