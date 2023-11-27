@@ -13,3 +13,8 @@ console.log(helloNpm())
 ```
 
 or, above code can be directly used in root directory of this monorepo with `node ./basic-script.js` command (without npm link).
+
+## Publishing
+
+1. `npm login` (if not logged in)
+2. `npm publish` for simple packages. `npm publish --access public` for scoped packages like this one.
