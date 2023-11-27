@@ -1,6 +1,6 @@
 {
   "name": "@fukaraadam-workspace/npm-package-examples",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Example packages to test things",
   "main": "index.js",
   "scripts": {
