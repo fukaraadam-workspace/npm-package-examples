@@ -1,3 +1,3 @@
-const helloNpm = require('@fukaraadam-workspace/basic-package')
+const helloNpm = require('@fukaraadam-workspace/basic-package');
 
-console.log(helloNpm())
+console.log(helloNpm());
