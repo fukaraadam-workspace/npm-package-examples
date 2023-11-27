@@ -2,7 +2,7 @@ name: Node.js Package
 # Credit: https://docs.github.com/en/packages/quickstart
 on:
   release:
-    types: [created]
+    types: [created, published]
 
 jobs:
   build:
@@ -16,6 +16,7 @@ jobs:
       - run: npm test
 
   publish-gpr:
+    if: github.event.action == 'created'
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -31,3 +32,20 @@ jobs:
       - run: npm publish --workspaces
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  # Credit: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
+  publish-npm:
+    if: github.event.action == 'published'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      - run: npm publish --workspaces --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
