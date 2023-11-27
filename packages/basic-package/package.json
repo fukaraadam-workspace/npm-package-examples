@@ -1,10 +1,10 @@
 {
   "name": "@fukaraadam-workspace/basic-package",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simplest package",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified yet\" && exit 0"
   },
   "repository": {
     "directory": "packages/basic-package",
