@@ -1,0 +1,23 @@
+{
+  "name": "@fukaraadam-workspace/basic-package",
+  "version": "0.1.0",
+  "description": "Simplest package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fukaraadam-workspace/npm-package-examples.git#main"
+  },
+  "keywords": [
+    "simple",
+    "basic"
+  ],
+  "author": "Furkan Alan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fukaraadam-workspace/npm-package-examples/issues"
+  },
+  "homepage": "https://github.com/fukaraadam-workspace/npm-package-examples/tree/main#readme"
+}

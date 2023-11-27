@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/fukaraadam-workspace/npm-package-examples/issues"
   },
-  "homepage": "https://github.com/fukaraadam-workspace/npm-package-examples#readme"
+  "homepage": "https://github.com/fukaraadam-workspace/npm-package-examples#readme",
+  "workspaces": [
+    "packages/basic-package"
+  ]
 }
