@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
+    "directory": "packages/basic-package",
     "type": "git",
-    "url": "git+https://github.com/fukaraadam-workspace/npm-package-examples.git#main"
+    "url": "https://github.com/fukaraadam-workspace/npm-package-examples.git"
   },
   "keywords": [
     "simple",
@@ -19,5 +20,5 @@
   "bugs": {
     "url": "https://github.com/fukaraadam-workspace/npm-package-examples/issues"
   },
-  "homepage": "https://github.com/fukaraadam-workspace/npm-package-examples/tree/main#readme"
+  "homepage": "https://github.com/fukaraadam-workspace/npm-package-examples/tree/main/packages/basic-package#readme"
 }
