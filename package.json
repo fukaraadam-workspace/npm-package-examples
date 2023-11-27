@@ -22,5 +22,8 @@
   "homepage": "https://github.com/fukaraadam-workspace/npm-package-examples#readme",
   "workspaces": [
     "packages/basic-package"
-  ]
+  ],
+  "devDependencies": {
+    "prettier": "3.1.0"
+  }
 }
