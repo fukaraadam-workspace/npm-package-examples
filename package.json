@@ -4,7 +4,6 @@
   "description": "Example packages to test things",
   "main": "index.js",
   "scripts": {
-    "prettier": "prettier --write .",
     "test": "echo \"No test exist\" && exit 0"
   },
   "repository": {
